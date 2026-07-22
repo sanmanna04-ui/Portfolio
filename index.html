@@ -201,12 +201,8 @@
 		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 			.then(response => response.json())
 			.then(response => {
-<<<<<<< HEAD
-        msg.innerHTML = "Msg sent successfully!"
-=======
         msg.innerHTML = "Message sent successfully!"
->>>>>>> 7f34c4e51b6d0806491b4e86c6e81001f525efa8
-        setTimeout(function(req, res){
+        setTimeout(function(){
           msg.innerHTML = ""
         },5000)
         form.reset()
