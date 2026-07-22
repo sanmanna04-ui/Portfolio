@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo">Dev<span>Portfolio</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home section" id="home">
+      <div class="home-text">
+        <p class="tagline">Node.js Backend Developer</p>
+        <h1>Hi, I'm <br><span>Santanu Manna</span></h1>
+        <p>
+          I build clean, secure, and scalable backend systems using Node.js,
+          Express.js, MongoDB, REST APIs, authentication, and database-driven
+          application logic.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn primary">View Work</a>
+          <a href="#contact" class="btn secondary">Hire Me</a>
+        </div>
+      </div>
+
+      <div class="home-image">
+        <div class="image-frame">
+          <img src="portfolioimage.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image">
+        <div class="orbit one"></div>
+        <div class="orbit two"></div>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+          alt="About me photo">
+      </div>
+
+      <div class="about-content">
+        <p class="tagline">About Me</p>
+        <h2>Backend logic with a creative edge.</h2>
+        <p>
+          I am a backend-focused developer who enjoys turning ideas into real
+          working systems. My main stack is Node.js, Express.js, and MongoDB.
+          I like building APIs, connecting databases, handling user data,
+          creating secure login systems, and making applications fast and
+          reliable.
+        </p>
+        <div class="about-stats">
+          <div>
+            <strong>Node.js</strong>
+            <span>Runtime</span>
+          </div>
+          <div>
+            <strong>Express.js</strong>
+            <span>API Layer</span>
+          </div>
+          <div>
+            <strong>MongoDB</strong>
+            <span>Database</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <p class="tagline">Services</p>
+        <h2>What I Can Build</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">API</div>
+          <h3>REST API Development</h3>
+          <p>
+            I create clean Express.js APIs with proper routes, controllers,
+            validation, error handling, and secure request flow.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">DB</div>
+          <h3>MongoDB Integration</h3>
+          <p>
+            I design MongoDB collections, connect them with Mongoose, and build
+            database operations for real application features.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">AUTH</div>
+          <h3>Authentication System</h3>
+          <p>
+            I can build login, signup, password hashing, JWT authentication,
+            protected routes, and role-based access systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="section-heading">
+        <p class="tagline">Portfolio</p>
+        <h2>Backend Project Ideas</h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="project-card">
+          <span>Node.js + Express.js + MongoDB</span>
+          <h3>Task Manager API</h3>
+          <p>
+            A backend API where users can register, login, create tasks,
+            update status, filter records, and store everything in MongoDB.
+          </p>
+        </article>
+
+        <article class="project-card featured">
+          <span>JWT + REST API + Mongoose</span>
+          <h3>Student Management Backend</h3>
+          <p>
+            A complete backend system for adding students, managing courses,
+            securing admin routes, and handling database relationships.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <span>Express.js Backend</span>
+          <h3>E-Commerce Server</h3>
+          <p>
+            Product APIs, cart logic, order creation, user authentication,
+            MongoDB storage, and payment-ready backend structure.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-info">
+        <p class="tagline">Contact Me</p>
+        <h2>Let's build something useful.</h2>
+        <p>
+          Send me a message for backend development, API work, database
+          projects, or full-stack collaboration.
+        </p>
+        <div class="contact-lines">
+          <a href="mailto:sanmanna04@gmail.com">sanmanna04@gmail.com</a>
+          <a href="tel:+91 8116729096">+91 811672 9096</a>
+          <a href="https://github.com/sanmanna04-ui" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="Santanu Manna.pdf">Download Resume</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" name="YOUR_FORM_NAME">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+      <span id="msg"></span>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Santanu Manna. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+  <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwbfuXbX5Q3j1cKn-kxKnZnFXN7onCXFiGGVFtmUKx1PbLIWcDEdRQLZJEyy1eEJMFNIQ/exec'
+	const form = document.forms['YOUR_FORM_NAME']
+
+  const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+        msg.innerHTML = "Msg sent successfully!"
+        setTimeout(function(req, res){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+
+</html>
